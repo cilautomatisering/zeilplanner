@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html>
-	<title>Template</title>
+	<title>Zeilplanner</title>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="javascript/css/jquery.mobile-1.3.2.css" />
-		<script src="javascript/jquery-1.10.2.js"></script>
-		<script src="javascript/jquery.mobile-1.3.2.js"></script>
-		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		
+		<!-- all stylesheets together, including datepicker 'datebox' -->
+		<link rel="stylesheet" type="text/css" href="javascript/css/jquery.mobile-1.3.2.css" />
+		<link rel="stylesheet" type="text/css" href="javascript/css/jqm-datebox.min.css" />
+
+		<!-- all js includes together, including datepicker 'datebox' -->
+		<script type="text/javascript" src="javascript/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="javascript/jquery.mobile-1.3.2.js"></script>
+		<script type="text/javascript" src="javascript/jqm-datebox.core.min.js"></script>
+		<script type="text/javascript" src="javascript/jqm-datebox.mode.calbox.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="javascript/zeilplanner.js"></script>
 	</head>
 	<body>
 		<div data-role="page" id="page1">
-			<!-- Header -->
 			<div data-role="header">
 				<h3>Zeilplanner</h3>
 			</div>
-			<!-- /header -->
-			<!-- Content    -->
 			<div data-role="content">
 				<h3>Content</h3>
-				<p>
-					Zeilplanner
-				</p>
+				<p>Zeilplanner</p>
 			</div>
-			<!-- /content -->
-			<!-- footer -->
+			<div>
+				<form id="PlanForm">
+					Vertrekdatum:
+					<input id="departure_date" type="text" data-role="datebox" class="ui-input-text ui-body-c ui-corner-all ui-icon-datebox"
+						data-options="{&quot;mode&quot;:&quot;calbox&quot;, &quot;useNewStyle&quot;:true, &quot;lockInput&quot;:false, &quot;showInitialValue&quot;:true, &quot;useTodayButton&quot;:true, &quot;overrideDateFormat&quot;:&quot;%d-%m-%Y&quot;}">
+					<br>
+					Vertrek lokatie:
+					<select id="departure-location" size="1">
+						<option value="array-element-1">array-element-1</option>
+						<option value="array-element-2">array-element-2</option>
+					</select>
+					Bestemming:
+					<select id="destination-location" size="1">
+						<option value="array-element-1">array-element-1</option>
+						<option value="array-element-2">array-element-2</option>
+					</select>
+					<br>
+					<input type="submit" value="Plan zeiltocht">
+				</form>
+				<br />
+			</div>
+
 			<div data-role="footer">
-				<h1>&copy; 2013 Sicco</h1>
+				<h1>&copy; 2013 Sicco, Tommer, Cil</h1>
 			</div>
-			<!-- /footer -->
 		</div>
 	</body>
 </html>
-<script>
-	document.addEventListener("deviceready", onDeviceReady, false);
-
-	function onDeviceReady() {
-		document.addEventListener("pause", onPause, false);
-		document.addEventListener("resume", onResume, false);
-		alert("Device is Ready");
-	}
-
-	function onPause() {
-		alert("paused!");
-	}
-
-	function onResume() {
-		alert("resume");
-	}
-</script>
