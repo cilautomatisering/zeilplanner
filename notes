@@ -1,0 +1,27 @@
+zeilplanner aantekeningen
+
+vertreklocaties : handmatig uitbreiden / updaten
+getijdentabel : volledig vernieuwen
+
+
+mogelijkheden schermflow :
+
+basic : begin altijd met invoerscherm. maximaal : met suggestie invoerwaarden
+
+optie : resultaatscherm toont altijd ook resultaat voor vorige dag en volgende dag.
+
+extended : begin met resultaatscherm obv huidige locatie en dag van vandaag. in dit geval is het misschien goed om dit via een instelling terug te kunnen zetten naar de 'basic'.
+
+
+
+
+plaatjes en visualisatie kan nog alle kanten op.
+misschien iets uit de zeilwereld?
+
+
+git(hub) : om code te delen.
+phonegap : om app te bakken voor android enzo.
+apple simulator : om app te bakken voor apple.
+
+
+kan iedereen onze code lezen, na het bakken van de app ?
