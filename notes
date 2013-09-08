@@ -1,27 +1,97 @@
 zeilplanner aantekeningen
-
+ 
 vertreklocaties : handmatig uitbreiden / updaten
 getijdentabel : volledig vernieuwen
 
-
 mogelijkheden schermflow :
-
 basic : begin altijd met invoerscherm. maximaal : met suggestie invoerwaarden
-
+ 
 optie : resultaatscherm toont altijd ook resultaat voor vorige dag en volgende dag.
+ 
+extended : begin met resultaatscherm obv huidige locatie en dag van vandaag. in dit geval is het 
 
-extended : begin met resultaatscherm obv huidige locatie en dag van vandaag. in dit geval is het misschien goed om dit via een instelling terug te kunnen zetten naar de 'basic'.
-
-
-
+misschien goed om dit via een instelling terug te kunnen zetten naar de 'basic'.
+ 
 
 plaatjes en visualisatie kan nog alle kanten op.
 misschien iets uit de zeilwereld?
 
-
 git(hub) : om code te delen.
 phonegap : om app te bakken voor android enzo.
 apple simulator : om app te bakken voor apple.
+ripple : add-on voor browser voor devices simuleren
+
+
 
 
 kan iedereen onze code lezen, na het bakken van de app ?
+
+
+
+
+
+
+bijv. i.g.v. antwoord "1 uur vòòr HW Vlieland" schat de tabel in, dat de zeiler
+
+- vertrekt vanaf Vlieland
+
+- er ca. 1 uur over doet om op een bepaald punt op de route te komen
+
+- vanaf dat 'bepaalde punt' gaat profiteren van hoog water
+
+
+mogelijkheden tot verberering :
+
+- wat is dat 'bepaalde punt' ?
+
+- hoe ver is dat 'bepaalde punt' t.o.v. het vertrekpunt ?
+
+- hoe ver is het nog vanaf dat 'bepaalde punt' naar de bestemming ?
+
+- hoe lang doet de zeiler er nog ongeveer over vanaf dat 'bepaalde punt' naar de bestemming ?
+
+- wat is de 'gangbare aankomsttijd' , per gekozen vertrektijdstip ?
+
+
+(dit alles even los van de wind en evt. andere omstandigheden)
+
+
+
+
+misschien het resultaat tonen als een getijden-grafiek met daarin de 'ideale vertrektijd' aangeduid.
+
+een grafiek is iets voor een volgende versie.
+
+1e versie = 1e demo = resultaat in simpele tekst.
+
+
+
+
+
+
+
+kolom E uit de specificaties-in-xls is overbodig en mag weg.
+
+
+het veld 'via' is gelijk aan het veld 'vaarwater' in de tabel.
+
+we kunnen dit veld het beste pas invulbaar maken, nadat de zeiler het 'Vertreklokatie' veld en het 
+
+'bestemming' veld heeft ingevuld.
+
+op dat moment kunnen we nl. deduceren welke waarden de zeiler mag invullen in het veld 'via' .
+
+
+- 'vertrektijd' wordt verwoord als 'ideale vertrektijd' 
+
+- het 'hoogte' veld bevat de hoogte van het water in centimeters en t.o.v. NAP van de vertreklokatie. 
+
+dat is gebruikelijk (hier lijkt ook een verbetering mogelijk...)
+
+- de afstand wordt weergegeven in 'NM' ( = nautische mijlen, ook wel zeemijl genoemd). dit is de totale 
+
+afstand van de vertreklokatie tot de bestemming.
+
+
+
+
